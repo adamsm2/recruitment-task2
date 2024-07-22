@@ -66,7 +66,7 @@ const AutocompleteTasksInput = () => {
     },
   });
 
-  const { bookmarkedTasks, notBookmarkedTasks } = tasks ? tasks.reduce((acc, task: Task) => {
+  const { bookmarkedTasks, notBookmarkedTasks } = tasks ? tasks.reduce((acc: any, task: Task) => {
     if (task.bookmarked) {
       acc.bookmarkedTasks.push(task);
     } else {

@@ -1,11 +1,11 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import LoginPage from "../pages/LoginPage.tsx";
 import AuthRoute from "./AuthRoute.tsx";
 import ProtectedRoute from "./ProtectedRoute.tsx";
 import TasksPage from "../pages/TasksPage.tsx";
 import RootLayout from "../components/layout/RootLayout.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
