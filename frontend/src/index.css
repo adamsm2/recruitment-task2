@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        background-color: #eeeeee
+    }
+}
+
+
+.custom-scrollbar {
+    overflow-y: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+    height: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #43C2B7;
+    height: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 5px;
+}
